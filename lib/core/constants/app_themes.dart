@@ -32,7 +32,7 @@ class AppTextStyles {
   // Main titles/headings
   static TextStyle title = GoogleFonts.poppins(
     fontSize: 24,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w600,
     color: AppColors.secondaryColor,
   );
 

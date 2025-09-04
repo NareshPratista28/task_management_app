@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task_management_app/core/constants/app_themes.dart';
 
@@ -17,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   }
 
   _navigateToOnboarding() async {
-    await Future.delayed(const Duration(milliseconds: 3000), () {
+    await Future.delayed(const Duration(milliseconds: 5000), () {
       if (mounted) {
         context.go('/onboarding');
       }
@@ -27,42 +28,16 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.primaryDefault,
-              AppColors.primaryDefault.withOpacity(0.8),
-            ],
-          ),
-        ),
+      backgroundColor: AppColors.primaryDefault,
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             // App Icon/Logo
-            Container(
+            SvgPicture.asset(
+              'assets/Onboarding/logo_onboarding.svg',
               width: 120,
-              height: 120,
-              decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.2),
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
-                  color: Colors.white.withOpacity(0.3),
-                  width: 2,
-                ),
-              ),
-              child: Icon(
-                Icons.task_alt_rounded,
-                size: 60,
-                color: Colors.white,
-              ),
             ),
-
-            const SizedBox(height: 24),
 
             // App Name
             Text('Todyapp', style: AppTextStyles.appName),
