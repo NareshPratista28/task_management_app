@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:task_management_app/core/constants/app_themes.dart';
+import 'package:task_management_app/core/widgets/primary_button.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -23,7 +24,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     OnboardingData(
       title: "Find the practicality in\nmaking your todo list",
       description:
-          "Easy-to-understand user interface that enables you more comfortable when you want to create a task or to do list. Todyapp can also improve productivity.",
+          "Easy-to-understand user interface that enables you more comfortable when you want to create a task or to do list. TuduApp can also improve productivity.",
       image: "assets/Onboarding/onboarding_2.png",
     ),
     OnboardingData(
@@ -152,29 +153,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-              child: SizedBox(
-                width: double.infinity,
-                height: 54,
-                child: ElevatedButton(
-                  onPressed: () {
-                    if (currentPage < onboardingData.length - 1) {
-                      pageController.nextPage(
-                        duration: const Duration(milliseconds: 300),
-                        curve: Curves.easeInOut,
-                      );
-                    } else {
-                      context.go('/welcome');
-                    }
-                  },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primaryDefault,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    elevation: 0,
-                  ),
-                  child: Text('Continue', style: AppTextStyles.buttonText),
-                ),
+              child: PrimaryButton(
+                text: 'Continue',
+                onPressed: () {
+                  if (currentPage < onboardingData.length - 1) {
+                    pageController.nextPage(
+                      duration: const Duration(milliseconds: 300),
+                      curve: Curves.easeInOut,
+                    );
+                  } else {
+                    context.go('/welcome');
+                  }
+                },
               ),
             ),
           ],

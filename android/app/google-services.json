@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "997487204878",
+    "project_id": "tody-app-6dbde",
+    "storage_bucket": "tody-app-6dbde.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997487204878:android:5a26d63fda26e59eeb7a5f",
+        "android_client_info": {
+          "package_name": "com.example.task_management_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997487204878-dsratdd9p3n2qa8q4dqf2k9s16l9cr8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.task_management_app",
+            "certificate_hash": "6e5e4b93721f64ee539d7314eb2a07f6ce5148a0"
+          }
+        },
+        {
+          "client_id": "997487204878-k1jnp0ts2jmec2ki42mro5tpu921aqmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9d6zamNy7sIKxFM3MpDr17w_t5UP0spc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997487204878-k1jnp0ts2jmec2ki42mro5tpu921aqmp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "997487204878-4m6v2drskv8h0pg3dkou1oir602ksadh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.taskManagementApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

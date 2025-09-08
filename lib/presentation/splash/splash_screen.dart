@@ -40,7 +40,7 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
 
             // App Name
-            Text('Todyapp', style: AppTextStyles.appName),
+            Text('TuduApp', style: AppTextStyles.appName),
 
             const SizedBox(height: 12),
 

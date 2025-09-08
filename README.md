@@ -1,4 +1,4 @@
-# Todyapp - Task Management App 📝
+# TuduApp - Task Management App 📝
 
 A modern and intuitive task management application built with Flutter. Organize your daily tasks efficiently with a beautiful, user-friendly interface.
 
